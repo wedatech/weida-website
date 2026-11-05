@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-TW" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/weida-website/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>緯大智控科技有限公司</title>
+    <script>
+      // 在畫面繪製前套用記住的深淺色與語言（語言以網址 ?lang 優先），避免先閃過另一種配色或語言
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+        const lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang");
+        if (lang === "en" || lang === "zh-TW") document.documentElement.lang = lang;
+      } catch {
+        // 讀不到 localStorage 就用預設值
+      }
+    </script>
+    <script type="module" crossorigin src="/weida-website/assets/index-C0vLe0ZU.js"></script>
+    <link rel="stylesheet" crossorigin href="/weida-website/assets/index-eqVl_-M9.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
