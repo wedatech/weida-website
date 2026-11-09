@@ -1,47 +1,49 @@
 <!doctype html>
 <html lang="zh-TW" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>緯大智控科技有限公司</title>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://wedatech.ai/#organization",
-  "name": "緯大智控科技有限公司",
-  "url": "https://wedatech.ai/",
-  "description": "提供企業 AI 管理與治理平台，以及大型語言模型安全評估服務。",
-  "email": "gene@wedatech.ai",
-  "telephone": "+886-955-885-018",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "TW",
-    "addressRegion": "臺中市",
-    "addressLocality": "北屯區",
-    "streetAddress": "平安里文心路四段750號地下室之1與752號地下室"
-  }
-}
-</script>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
-    <script>
-      // 在畫面繪製前套用記住的深淺色與語言（語言以網址 ?lang 優先），避免先閃過另一種配色或語言
-      try {
-        const theme = localStorage.getItem("theme");
-        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
-        const lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang");
-        if (lang === "en" || lang === "zh-TW") document.documentElement.lang = lang;
-      } catch {
+		<title>緯大智控科技有限公司</title>
+    
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"@id": "https://wedatech.ai/#organization",
+			"name": "緯大智控科技有限公司",
+			"url": "https://wedatech.ai/",
+			"description": "提供企業 AI 管理與治理平台，以及大型語言模型安全評估服務。",
+			"email": "gene@wedatech.ai",
+			"telephone": "+886-955-885-018",
+			"address": {
+				"@type": "PostalAddress",
+				"addressCountry": "TW",
+				"addressRegion": "臺中市",
+				"addressLocality": "北屯區",
+				"streetAddress": "平安里文心路四段750號地下室之1與752號地下室"
+			}
+		}
+		</script>
+    
+		<script>
+		// 在畫面繪製前套用記住的深淺色與語言（語言以網址 ?lang 優先），避免先閃過另一種配色或語言
+		try {
+			const theme = localStorage.getItem("theme");
+			if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+			const lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang");
+			if (lang === "en" || lang === "zh-TW") document.documentElement.lang = lang;
+		} catch {
         // 讀不到 localStorage 就用預設值
-      }
-    </script>
-    <script type="module" crossorigin src="/assets/index-BzCRF1R9.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-eqVl_-M9.css">
-  </head>
-  <body>
-    <div id="root"></div>
-
-  </body>
-</html>
+		}
+		</script>
+    
+		<script type="module" crossorigin src="/assets/index-BzCRF1R9.js"/>
+		<link rel="stylesheet" crossorigin href="/assets/index-eqVl_-M9.css">
+		
+		</head>
+		<body>
+			<div id="root"/>
+		</body>
+	</html>
